@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/<uuid>")
 def cat(uuid):
     rh = Robohash(uuid)
-    rh.assemble(roboset='set4') #🐱
+    rh.assemble(roboset='set4',bgset="bg2") #🐱
     fakefile = io.BytesIO()
     rh.img.save(fakefile,format='PNG')
     fakefile.seek(0)

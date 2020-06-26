@@ -1,0 +1,32 @@
+<style>
+/* https://bennettfeely.com/clippy/ */
+.hex-image {
+clip-path: polygon(26% 7%, 74% 7%, 97% 50%, 74% 93%, 26% 93%, 3% 50%);
+}
+
+/*https://stackoverflow.com/a/31854299/124019*/
+.poligon {
+  display: inline-block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: black;
+  box-sizing: border-box;
+  clip-path: polygon(26% 7%, 74% 7%, 97% 50%, 74% 93%, 26% 93%, 3% 50%);
+}
+.poligon img {
+  position: absolute;
+  top: 4px; /* equal to border thickness */
+  left: 4px; /* equal to border thickness */
+  width: 142px; /* container height - (border thickness * 2) */
+  height: 142px; /* container height - (border thickness * 2) */
+  clip-path: polygon(26% 7%, 74% 7%, 97% 50%, 74% 93%, 26% 93%, 3% 50%);
+}
+
+
+</style>
+<img src="testingcat.png" class="hex-image">
+
+<div class="poligon">
+  <img src="testingcat.png">
+</div>
